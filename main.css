@@ -32,6 +32,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 0rem 4rem;
+    margin: 1.5rem 0rem;
     
 }
 
@@ -59,8 +62,14 @@ fieldset.fieldset1{
     color:rgb(12, 95, 121);
 }
 
+/* IMAGES */
 
-
+img.imgt1{
+    display: block;
+    width: 30%;
+    margin: auto;
+    
+}
 
 
 
