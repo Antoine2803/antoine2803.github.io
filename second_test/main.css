@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width: 769px) {
+
+header {
+    background-color: white;
+    color: #fff;
+    margin:0;
+    border:black;
+    justify-content: space-between;
+    display: flex;
+}
+
+a.headernom{
+    color:black;
+    padding: 1rem 2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: end; /* Center the items horizontally */
+    margin:0;
+}
+
+nav ul li {
+    margin:0;
+    padding: 1rem 0rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border-bottom:3px solid rgb(7, 51, 65);
+}
+
+nav ul li a.active{
+    color: black;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    border-bottom:3px solid rgb(3, 126, 163);
+}
+
+nav ul li a:hover{
+    border-bottom:3px solid rgb(12, 95, 121);
+    background-color: rgb(240, 240, 240);
+
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        list-style: none;
+        padding: 0;
+        justify-content: end; /* Center the items horizontally */
+        margin:0;
+    }
+
+    a.headernom{
+        color:black;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 1rem;
+    }
+
+    nav ul li {
+        margin:0;
+        padding: 0.5rem 1rem;
+        align-items: column;
+    }
+    
+    nav ul li a {
+        color: black;
+        text-decoration: none;
+        padding: 1rem 1rem;
+    }
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
