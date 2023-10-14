@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 901px) {
 
     header.wideNavBar {
         background-color: white;
@@ -14,41 +14,46 @@ body {
         display: flex;
     }
 
-    a.headernom{
-        color:black;
-        padding: 1rem 2rem;
-        font-weight: 700;
-        text-decoration: none;
-    }
-
     nav ul{
         list-style: none;
         padding: 0;
-        display: flex; /* Use flexbox to create a horizontal layout */
-        justify-content: end; /* Center the items horizontally */
+        display: flex;
+        justify-content: end;
         margin:0;
     }
 
     nav ul li {
         margin:0;
         padding: 1rem 0rem;
-    }
-
-    nav ul li a {
-        color: black;
-        text-decoration: none;
-        padding: 1rem 1rem;
         border-bottom:3px solid rgb(7, 51, 65);
     }
 
-    nav ul li a.active{
-        color: black;
-        text-decoration: none;
-        padding: 1rem 1rem;
+    nav ul li.active {
+        margin:0;
+        padding: 1rem 0rem;
         border-bottom:3px solid rgb(3, 126, 163);
     }
 
-    nav ul li a:hover{
+    nav ul li a {
+        color: rgb(7, 51, 65);
+        text-decoration: none;
+        padding-right: 0.7rem;
+        padding-left: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        align-items  : center;
+        text-align: center;
+    }
+
+    nav ul li a.active{
+        color: rgb(3, 126, 163);
+        text-decoration: none;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        text-align: center;
+    }
+
+    nav ul li:hover{
         border-bottom:3px solid rgb(12, 95, 121);
         background-color: rgb(240, 240, 240);
 
@@ -60,7 +65,7 @@ body {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
     header.wideNavBar{
         display: none;
@@ -71,17 +76,11 @@ body {
         margin:0;
         justify-content: space-between;
     }
-
-    .smallNavBar a.headernom{
-        color:black;
-        padding: 1rem 2rem;
-        font-weight: 700;
-        text-decoration: none;
-    }
     
     .smallNavBar .navbar {
         display: none;
-        background-color: #333;
+        background-color: rgb(12, 95, 121);
+        opacity:0.98;
         color: #fff;
         padding: 0px 20px;
         margin:0;
@@ -91,7 +90,7 @@ body {
         height: 100%;
         flex-direction: column;
     }
-
+/*           Texte de la navbar         */
     .smallNavBar .navbar ul {
         list-style: none;
         padding: 0;
@@ -106,41 +105,89 @@ body {
         text-decoration: none;
     }
 
-    .smallNavBar .nav-toggle {
+    .smallNavBar .navbar ul li a.active {
+        color: #000000;
+    }
+
+    .smallNavBar .navbar ul li a:hover {
+        color: #2e2e2e;
+    }
+
+/*      Boutons de la navbar        */
+    .smallNavBar .nav-toggleOn {
         display: block;
-        background-color: #333;
+        background-color:  rgb(12, 95, 121);
         color: #fff;
         border: none;
         padding: 10px 20px;
         font-size: 16px;
+        font-weight: 550;
+        margin: 0.5rem 0.25rem;
+    }
+
+    .smallNavBar .nav-toggleOn:hover{
+        color: #000000;
         cursor: pointer;
-        margin: 0.25rem;
+    }
+
+    .smallNavBar .nav-toggleOn.active{
+        display:none;
+    }
+
+    .smallNavBar .nav-toggleOff{
+        display: none;
+    }
+
+    .smallNavBar .nav-toggleOff.active:hover{
+        color:#000000;
+        cursor: pointer;
+    }
+
+    .smallNavBar .nav-toggleOff.active{
+        display: block;
+        background-color:  rgb(12, 95, 121);
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        font-size: 25px;
+        cursor: pointer;
+        margin-right: 10.8rem;
+        margin-top: 0.85rem;
+        margin-bottom: 0.85rem;
     }
 
     .navbar.active {
         display: flex;
     }
 
-    .nav-toggle.active{
-        background-color: #969696;
-        color:black;
-        padding: 5px 10px;
-        margin-right: 7.25rem;
-    }
+}
+
+a.headernom{
+    color:rgb(7, 51, 65);
+    padding: 1rem 1rem;
+    font-weight: 700;
+    font-size: 2.15rem;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
 }
 
 .content {
     padding: 20px;
     text-align: center;
-    border: 1px solid black;
+    color:rgb(7, 51, 65);
+    border: 1px solid rgb(7, 51, 65);
 }
 
 footer {
-    background-color: #333;
+    background-color: rgb(5, 35, 44);
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: fixed;    
     bottom: 0;
     width: 100%;
 }
+

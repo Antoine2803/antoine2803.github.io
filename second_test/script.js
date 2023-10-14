@@ -1,9 +1,15 @@
-const navToggle = document.querySelector('.nav-toggle');
+const navToggleOn = document.querySelector('.nav-toggleOn');
+const navToggleOff = document.querySelector('.nav-toggleOff');
 const navbar = document.querySelector('.navbar');
 
-navToggle.addEventListener('click', () => {
+navToggleOn.addEventListener('click', () => {
     navbar.classList.toggle('active');
-    navToggle.classList.toggle('active');
+    navToggleOn.classList.toggle('active');
+    navToggleOff.classList.toggle('active');
 });
 
-
+navToggleOff.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    navToggleOn.classList.toggle('active');
+    navToggleOff.classList.toggle('active');
+});
