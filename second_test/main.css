@@ -5,82 +5,127 @@ body {
 }
 @media screen and (min-width: 769px) {
 
-header {
-    background-color: white;
-    color: #fff;
-    margin:0;
-    border:black;
-    justify-content: space-between;
-    display: flex;
-}
-
-a.headernom{
-    color:black;
-    padding: 1rem 2rem;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex; /* Use flexbox to create a horizontal layout */
-    justify-content: end; /* Center the items horizontally */
-    margin:0;
-}
-
-nav ul li {
-    margin:0;
-    padding: 1rem 0rem;
-}
-
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    padding: 1rem 1rem;
-    border-bottom:3px solid rgb(7, 51, 65);
-}
-
-nav ul li a.active{
-    color: black;
-    text-decoration: none;
-    padding: 1rem 1rem;
-    border-bottom:3px solid rgb(3, 126, 163);
-}
-
-nav ul li a:hover{
-    border-bottom:3px solid rgb(12, 95, 121);
-    background-color: rgb(240, 240, 240);
-
-}
-
-}
-
-@media screen and (max-width: 768px) {
-    nav ul {
-        list-style: none;
-        padding: 0;
-        justify-content: end; /* Center the items horizontally */
+    header.wideNavBar {
+        background-color: white;
+        color: #fff;
         margin:0;
+        border:black;
+        justify-content: space-between;
+        display: flex;
     }
 
     a.headernom{
         color:black;
+        padding: 1rem 2rem;
         font-weight: 700;
         text-decoration: none;
-        padding: 1rem;
+    }
+
+    nav ul{
+        list-style: none;
+        padding: 0;
+        display: flex; /* Use flexbox to create a horizontal layout */
+        justify-content: end; /* Center the items horizontally */
+        margin:0;
     }
 
     nav ul li {
         margin:0;
-        padding: 0.5rem 1rem;
-        align-items: column;
+        padding: 1rem 0rem;
     }
-    
+
     nav ul li a {
         color: black;
         text-decoration: none;
         padding: 1rem 1rem;
+        border-bottom:3px solid rgb(7, 51, 65);
+    }
+
+    nav ul li a.active{
+        color: black;
+        text-decoration: none;
+        padding: 1rem 1rem;
+        border-bottom:3px solid rgb(3, 126, 163);
+    }
+
+    nav ul li a:hover{
+        border-bottom:3px solid rgb(12, 95, 121);
+        background-color: rgb(240, 240, 240);
+
+    }
+
+    header.smallNavBar{
+        display:none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    header.wideNavBar{
+        display: none;
+    }
+
+    header.smallNavBar{
+        display: flex;
+        margin:0;
+        justify-content: space-between;
+    }
+
+    .smallNavBar a.headernom{
+        color:black;
+        padding: 1rem 2rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    
+    .smallNavBar .navbar {
+        display: none;
+        background-color: #333;
+        color: #fff;
+        padding: 0px 20px;
+        margin:0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .smallNavBar .navbar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .smallNavBar .navbar ul li {
+        padding: 1rem 0rem 0rem 0.5rem;
+    }
+
+    .smallNavBar .navbar ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .smallNavBar .nav-toggle {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0.25rem;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .nav-toggle.active{
+        background-color: #969696;
+        color:black;
+        padding: 5px 10px;
+        margin-right: 7.25rem;
     }
 }
 
