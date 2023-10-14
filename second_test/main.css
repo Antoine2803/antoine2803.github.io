@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
+/*      Mise en forme selon la taille de l'ecran      */
 @media screen and (min-width: 901px) {
 
     header.wideNavBar {
@@ -56,15 +57,14 @@ body {
     nav ul li:hover{
         border-bottom:3px solid rgb(12, 95, 121);
         background-color: rgb(240, 240, 240);
-
     }
 
     header.smallNavBar{
         display:none;
     }
-
 }
 
+/*Changement d'affichage losrque l'écran devient trop petit pour la lageur de la barre de nav*/
 @media screen and (max-width: 900px) {
 
     header.wideNavBar{
@@ -103,6 +103,8 @@ body {
     .smallNavBar .navbar ul li a {
         color: #fff;
         text-decoration: none;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 
     .smallNavBar .navbar ul li a.active {
@@ -122,7 +124,7 @@ body {
         padding: 10px 20px;
         font-size: 16px;
         font-weight: 550;
-        margin: 0.5rem 0.25rem;
+        margin: 0.5rem 0.5rem;
     }
 
     .smallNavBar .nav-toggleOn:hover{
@@ -151,7 +153,8 @@ body {
         padding: 5px 10px;
         font-size: 25px;
         cursor: pointer;
-        margin-right: 10.8rem;
+        position:fixed;
+        right: 10.8rem;
         margin-top: 0.85rem;
         margin-bottom: 0.85rem;
     }
@@ -161,7 +164,7 @@ body {
     }
 
 }
-
+/*          Contenu des pages           */
 a.headernom{
     color:rgb(7, 51, 65);
     padding: 1rem 1rem;
@@ -174,7 +177,7 @@ a.headernom{
     flex-direction: column;
 }
 
-.content {
+.title {
     padding: 20px;
     text-align: center;
     color:rgb(7, 51, 65);
@@ -185,8 +188,7 @@ footer {
     background-color: rgb(5, 35, 44);
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;    
+    padding: 10px 0; 
     bottom: 0;
     width: 100%;
 }
