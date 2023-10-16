@@ -10,7 +10,6 @@ body {
         background-color: white;
         color: #fff;
         margin:0;
-        border:black;
         justify-content: space-between;
         border-bottom: 1px solid rgb(7, 51, 65);
         display: flex;
@@ -24,38 +23,30 @@ body {
         margin:0;
     }
 
-    nav ul li {
+    nav ul a li {
         margin:0;
-        padding: 1rem 0rem;
-        border-bottom:3px solid rgb(7, 51, 65);
     }
 
-    nav ul li.active {
-        margin:0;
-        padding: 1rem 0rem;
-        border-bottom:3px solid rgb(3, 126, 163);
-    }
-
-    nav ul li a {
+    nav ul a{
         color: rgb(7, 51, 65);
         text-decoration: none;
-        padding-right: 0.7rem;
-        padding-left: 0.7rem;
+        padding:1rem 0.7rem 1rem 0.7rem;
         display: flex;
         flex-direction: column;
         align-items  : center;
         text-align: center;
+        border-bottom: 3px solid rgb(7, 51, 65);
     }
 
-    nav ul li a.active{
+    nav ul a.active{
         color: rgb(3, 126, 163);
+        padding:1rem 0.7rem 1rem 0.7rem;
         text-decoration: none;
-        padding-left: 0.7rem;
-        padding-right: 0.7rem;
         text-align: center;
+        border-bottom: 3px solid rgb(3, 126, 163);
     }
 
-    nav ul li:hover{
+    nav ul a:hover{
         border-bottom:3px solid rgb(12, 95, 121);
         background-color: rgb(240, 240, 240);
     }
@@ -186,6 +177,24 @@ a.headernom{
     border-bottom: 1px solid rgb(7, 51, 65);
 }
 
+.divt1{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+a.at1{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items  : center;
+    text-align: center;
+}
+
+.imgt1{
+    margin: 0;
+}
+
 footer {
     background-color: rgb(5, 35, 44);
     color: #fff;
@@ -194,4 +203,21 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.content p {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
