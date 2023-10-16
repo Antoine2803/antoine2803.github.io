@@ -183,6 +183,12 @@ a.headernom{
     margin: 0;
 }
 
+.divt2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 a.at1{
     font-size: 18px;
     display: flex;
@@ -192,16 +198,15 @@ a.at1{
 }
 
 .imgt1{
-    margin: 0;
+    margin: 2rem 0.10rem;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    height: 20rem;
 }
 
-footer {
-    background-color: rgb(5, 35, 44);
-    color: #fff;
-    text-align: center;
-    padding: 10px 0; 
-    bottom: 0;
-    width: 100%;
+.imgt2{
+    margin-top: 2rem;
+    height: 50rem;
 }
 
 .content p {
@@ -209,6 +214,23 @@ footer {
     align-items: center;
 }
 
+.artt1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0rem 3rem;
+}
+
+footer {
+    background-color: rgb(5, 35, 44);
+    color: #fff;
+    text-align: center;
+    padding: 0.90rem 0;
+    margin-top: 4rem; 
+    bottom: 0;
+    width: 100%;
+}
 
 
 
