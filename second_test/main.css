@@ -189,6 +189,12 @@ a.headernom{
     align-items: center;
 }
 
+.divt3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 a.at1{
     font-size: 18px;
     display: flex;
@@ -205,7 +211,7 @@ a.at1{
 }
 
 .imgt2{
-    margin-top: 2rem;
+    margin-top: 1rem;
     height: 50rem;
 }
 
@@ -232,9 +238,43 @@ footer {
     width: 100%;
 }
 
+.fieldsett1{
+    padding:0;
+    margin: 0;
+    margin-top: 1rem;
+    border: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
 
+input[type=radio] {
+    display: none;
+}
 
+input[type=radio]:checked + label{
+    background-color: rgb(12, 95, 121);
+    color: white;
+}
 
+.fieldsett1 button {
+    border:none;
+    padding: 0.25rem 0.5rem;
+    margin: 0rem 0.5rem;
+    font-size: 16px;
+    background-color:white ;
+
+}
+
+label {
+    padding: 0.25rem 0.5rem;
+    margin: 0rem 0.5rem;
+    background-color: white;
+}
+
+label:hover {
+    background-color: blue;
+}
 
 
 
