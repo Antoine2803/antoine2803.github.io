@@ -6,7 +6,6 @@ const englCV = document.querySelector('.englCV');
 const frcv = document.querySelector('.frCV');
 const encv = document.querySelector('.enCV');
 
-
 navToggleOn.addEventListener('click', () => {
     navbar.classList.toggle('active');
     navToggleOn.classList.toggle('active');
