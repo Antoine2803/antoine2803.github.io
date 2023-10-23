@@ -189,7 +189,6 @@ a.headernom{
 
 .divt1{
     display:flex;
-    width: 90%;
     margin: 0;
 }
 
@@ -282,7 +281,7 @@ a.headernom{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0rem 3rem;
+    margin: 0rem 3rem 1rem 3rem;
 }
 
 .fieldsett1{
