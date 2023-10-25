@@ -176,8 +176,42 @@ a.headernom{
     text-align: center;
     color:rgb(7, 51, 65);
     border-bottom: 1px solid rgb(7, 51, 65);
+    border-top: 1px solid rgb(7, 51, 65);
     background-color: white;
 }
+
+.soustab{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+}
+
+.soustab a{
+    text-decoration: underline;
+    margin: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.soustab ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0.5rem 0;
+}
+
+.soustab li{
+    display:none;
+}
+
+.soustab ul a{
+    text-decoration: none;
+    color: #000000;
+    margin:0;
+}
+
+.soustab ul a::before{
+    content:'•';
+    display: inline-block;
+}
+
 .content{
     width: 94%;
     margin: 1rem auto;
