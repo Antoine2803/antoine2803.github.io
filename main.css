@@ -187,44 +187,118 @@ a.headernom{
     padding: 0.8rem 1rem 1rem 1rem;
     text-align: center;
     color: var(--bleuf-ecrit);
-    border-bottom: 1px solid ;
+    border-bottom: 1px solid var(--bleuf-ecrit);
     border-top: 1px solid var(--bleuf-ecrit);
     margin-bottom: 2rem;
     background-color: white;
 }
 
-.soustab{
-    display: flex;
-    flex-direction: column;
-    margin:0;
-    margin-top: -1.5rem;
+/*          ---bouton to top----            */
+@media screen and (min-width: 900px) {
+.btotop{
+    position: fixed;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    right: 2rem;
+    bottom: 2rem;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    color: black;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: var(--bleuc-actif);
+    text-decoration: none;
+    text-align: center;
+}}
+
+@media screen and (max-width: 900px) {
+    .btotop{
+        position: fixed;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-weight: 800;
+        right: 1.2rem;
+        bottom: 2rem;
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
+        color: black;
+        border: 1px solid black;
+        border-radius: 100%;
+        background-color: var(--bleuc-actif);
+        text-decoration: none;
+        text-align: center;
+    }}
+
+/*          ---Sous fenetre---            */
+@media screen and (min-width: 900px) {
+    .soustab{
+        display: flex;
+        justify-content: center;
+        margin:0;
+        margin-top: -1.5rem;
+    }
+
+    .soustab ul a{
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        background-color: var(--bleu-menu);
+        padding: 0.6rem 0.8rem 0.8rem;
+        margin:0 0.5rem 0 0;
+        border-radius: 0.5rem;
+        font-size: 1.6rem;
+    }
+
+    .soustab ul{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 0.5rem 0;
+    }
+    
+
 }
+
+@media screen and (max-width: 900px) {
+    .soustab{
+        display: flex;
+        align-items: center;
+        margin:0;
+        margin-top: -1.5rem;
+    }
+
+    .soustab ul a{
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        background-color: var(--bleu-menu);
+        padding: 0.6rem 0.8rem 0.8rem;
+        margin:0 0.5rem 0rem 0;
+        border-radius: 0.5rem;
+        font-size: 1.6rem;
+    }
+
+    .soustab ul a:not(:last-child){
+        margin:0 0.5rem 0.5rem 0;
+    }
+
+    .soustab ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 0.5rem 0;
+    }
+    
+}
+
 
 .soustab a{
     text-decoration: underline;
     margin: 0.5rem 0rem 0rem 0.5rem;
 }
 
-.soustab ul{
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    margin: 0 0 0.5rem 0;
-}
-
 .soustab li{
     display:none;
-}
-
-.soustab ul a{
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    background-color: var(--bleu-menu);
-    padding: 0.6rem 0.8rem 0.8rem;
-    margin:0 0.5rem 0 0;
-    border-radius: 0.5rem;
-    font-size: 1.6rem;
 }
 
 .soustab ul a:hover{
@@ -300,11 +374,11 @@ a.headernom{
     }   
 
     p {
-        margin: auto auto auto 1rem;
+        margin: auto auto auto 0.7rem;
     }
 
     .imgt1{
-        margin: 2rem 1rem 2rem auto;
+        margin: 2rem 0.7rem 2rem auto;
         width:25%;
         border-radius: 50%;
         border: 1px solid #000000;
