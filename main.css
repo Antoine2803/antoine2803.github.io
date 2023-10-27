@@ -13,6 +13,7 @@ body {
     background-color: var(--bg);
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 /*      Mise en forme selon la taille de l'ecran      */
 @media screen and (min-width: 900px) {
@@ -195,29 +196,11 @@ a.headernom{
 
 /*          ---bouton to top----            */
 @media screen and (min-width: 900px) {
-.btotop{
-    position: fixed;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 800;
-    right: 2rem;
-    bottom: 2rem;
-    font-size: 2rem;
-    width: 2rem;
-    height: 2rem;
-    color: black;
-    border: 1px solid black;
-    border-radius: 100%;
-    background-color: var(--bleuc-actif);
-    text-decoration: none;
-    text-align: center;
-}}
-
-@media screen and (max-width: 900px) {
     .btotop{
         position: fixed;
         font-family:Georgia, 'Times New Roman', Times, serif;
         font-weight: 800;
-        right: 1.2rem;
+        right: 2rem;
         bottom: 2rem;
         font-size: 2rem;
         width: 2rem;
@@ -228,7 +211,36 @@ a.headernom{
         background-color: var(--bleuc-actif);
         text-decoration: none;
         text-align: center;
-    }}
+        box-shadow: 2px 2px 15px #3d3d3d;
+    }
+
+    .btotop1{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .btotop1{
+        position: fixed;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-weight: 800;
+        right: 0.5rem;
+        bottom: 1rem;
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
+        color: black;
+        border: 1px solid black;
+        border-radius: 100%;
+        background-color: var(--bleuc-actif);
+        text-decoration: none;
+        text-align: center;
+    box-shadow: 2px 2px 15px #3d3d3d;
+    }
+    .btotop{
+        display: none;
+    }
+}
 
 /*          ---Sous fenetre---            */
 @media screen and (min-width: 900px) {
@@ -291,7 +303,6 @@ a.headernom{
     
 }
 
-
 .soustab a{
     text-decoration: underline;
     margin: 0.5rem 0rem 0rem 0.5rem;
@@ -318,7 +329,7 @@ a.headernom{
     background-color: white;
     border-radius: 30px;
     border: 1px solid rgb(205, 215, 235);
-    box-shadow: 10px 10px 5px #999ca0;
+    box-shadow: 8px 8px 20px #999ca0;
 }
 
 .divt1{
