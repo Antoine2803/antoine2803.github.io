@@ -365,6 +365,13 @@ a.headernom{
     flex-direction: column;
 }
 
+.trace{
+    background-color: var(--bleuf-ecrit);
+    height: 4px;
+    width: 80%;
+    border-radius: 10000px;
+}
+
 @media screen and (min-width: 756px) {
     a.at1{
        font-size: 1.5rem;
