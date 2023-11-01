@@ -419,10 +419,14 @@ a.headernom{
     }
 }
 
+
+/*          Images des cv           */
 .englCV{
     display: flex;
     width: 80%;
     margin-bottom: 3rem;
+    border-radius: 28px;
+    border: 1px solid var(--bleuf-ecrit);
 }
 
 .englCV.active{
@@ -437,6 +441,53 @@ a.headernom{
     display: flex;
     margin-bottom: 3rem;
     width: 80%;
+    border-radius: 28px;
+    border: 1px solid var(--bleuf-ecrit);
+}
+
+/*          bouttons dl         */
+.dleng {
+    display: block;
+    padding: 0.3rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color:blue;
+    background-color: var(--bg);
+    border-radius: 0.5rem;
+    border: 2px solid var(--bleuc-actif2);
+}
+
+.dleng:hover{
+    background-color: #d5dce7;
+}
+
+.dleng.active{
+    display: none;
+}
+
+.dlfr{
+    display: none;
+}
+
+.dlfr.active {
+    display: block;
+    padding: 0.3rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color:blue;
+    background-color: var(--bg);
+    border-radius: 0.5rem;
+    border: 2px solid var(--bleuc-actif2);
+}
+
+.dlfr.active:hover{
+    background-color: #d5dce7;
+}
+
+.icondl{
+    height: 1.6rem;
 }
 
 .content p {
@@ -462,6 +513,7 @@ a.headernom{
     background-color: white;
 }
 
+/*          bouttons career dev         */
 .linke{
     border:none;
     padding: 0.25rem 0.5rem 0.5rem;
