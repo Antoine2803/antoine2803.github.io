@@ -595,9 +595,22 @@ label:hover {
     color:var(--bg);
 }
 
-.videot1{
-    margin-bottom: 1rem;
+@media screen and (min-width: 756px) {
+    .videot1{
+        margin-bottom: 1rem;
+        width:35rem;
+        height:19.688rem;
+    }
 }
+
+@media screen and (max-width: 756px) {
+    .videot1{
+        margin-bottom: 1rem;
+        width:80%;
+        height: 16.75rem
+    }
+}
+
 
 footer {
     background-color: rgb(5, 35, 44);
