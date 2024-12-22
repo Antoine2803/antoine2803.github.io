@@ -13,12 +13,24 @@
         <a class="headernom" href="index.html">E-portfolio</a>
         <nav calss="largeNavBar">
             <ul class="largeNavBar">
-                <a href="index.html"><li></li>Home</a>
-                <a class="active" href="eng_courses.html"><li></li>Engineering<br> courses</a>
-                <a href="career_dev.html"><li></li>Career<br> Development</a>
-                <a href="sports_and_others.html"><li></li>Sport & other<br> activities</a>
-                <a href="Sustainability&civic_engagement.html"><li></li>Sustainability &<br> Civic Engagement</a>
-                <a href="International_mobility.html"><li></li>International<br> Mobility</a>
+                <a href="index.html">
+                    <li></li>Home
+                </a>
+                <a class="active" href="eng_courses.html">
+                    <li></li>Engineering<br> courses
+                </a>
+                <a href="career_dev.html">
+                    <li></li>Career<br> Development
+                </a>
+                <a href="sports_and_others.html">
+                    <li></li>Sport & other<br> activities
+                </a>
+                <a href="Sustainability&civic_engagement.html">
+                    <li></li>Sustainability &<br> Civic Engagement
+                </a>
+                <a href="International_mobility.html">
+                    <li></li>International<br> Mobility
+                </a>
             </ul>
         </nav>
     </header>
@@ -38,29 +50,92 @@
             </ul>
         </nav>
     </header>
-    <a class="btotop1" href="#topm" >^</a>
+    <a class="btotop1" href="#topm">^</a>
     <a class="btotop" href="#top">^</a>
     <script src="script.js"></script>
 
     <div class="title">
-        <h1>Engineering courses</h1>
+        <h1>School Projects</h1>
     </div>
 
-    <div class="soustab">
+    <!-- <div class="soustab">
         <ul>
-            <a href="#projects"><li></li>Projects & Productions</a>
+            <a href="#projects">
+                <li></li>Projects & Productions
+            </a>
         </ul>
     </div>
 
     <div class="title" id="projects">
         <h1>Projects & Productions</h1>
-    </div>
+    </div> -->
 
 
     <div class="content">
         <div class="divt2">
             <h1>TIPE</h1>
-            <article class="artt1">Study of electrocromic glass in the context of building thermal regulation, made in collaboration with Achille SCIACCO</article>
+            <article class="artt1">
+                Study of electrocromic glass in the context of building thermal regulation
+            </article>
+            <video class="vidt1" src="Media/TIPE.webm" controls=""> The video cannot be loaded to your browser so here
+                is a link to <a href="Media/TIPE.webm">download
+                    video</a> .
+            </video>
+
+            <article class="artt1">
+                In the video above you can see an electrocromic glass on which a tension is applied, first we apply -5V
+                on the circuit to decolor the glass, then 5V is applied to recolor it. The glass is in a montage with
+                Arduino to automatize it. The objective was to measure the efficiency of solar radiation absorption to
+                see if this solution was viable and could replace a climate control unit.
+            </article>
+
+            <a class="hyperlien" href="Media/TIPE.pdf"> TIPE's slides </a>
+
+            <article class="collab">Made in collaboration with Achille SCIACCO</article>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="divt2">
+            <h1>OCAML compiler</h1>
+            <article class="artt1">
+                I'm currently making an OCAML compiler for a simple language that includes
+                functions, rationals,
+                pointers global and static variables etc...
+            </article>
+            <a class="hyperlien" href="https://github.com/QuentinMP2/mini-compiler">To the project</a>
+            <article class="collab">Made in collaboration with Quentin POINTEAU</article>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="divt2">
+            <h1>Hagimule : parallel download service</h1>
+            <article class="artt1">
+                Hagimule is a project that implements parallel download of fragments of files to speed up the process.
+                The project structure is simple: Clients, which are represented by two entities, a downloader that makes
+                the request for the download of the different files and a daemon that is capable of sending particular
+                parts of the files asked for download. A Diary that saves all the files disponibles on the different
+                clients that saves all the files disponibles on the different clients.
+            </article>
+            <a class="hyperlien" href="https://github.com/QuentinMP2/Hagimule">To the project</a>
+            <article class="collab">Made in collaboration with Quentin POINTEAU</article>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="divt2">
+            <h1>UART on FPGA</h1>
+            <article class="artt1">
+                This is a little school project that consist on sending keyboard inputs to a FPGA and resend it to the
+                computer in order to print it in an terminal.
+            </article>
+            <a class="hyperlien" href="https://github.com/Antoine2803/UART-FPGA">To the project</a>
+            <article class="collab">Made in collaboration with Quentin POINTEAU</article>
+
         </div>
     </div>
 
