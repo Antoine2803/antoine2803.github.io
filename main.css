@@ -389,8 +389,7 @@ a.headernom{
     
     .imgt1{
         margin: 2rem 2rem 2rem auto;
-        width: 20%;
-        border-radius: 50%;
+        width: 15%;
         border: 1px solid #000000;
     }
 
@@ -414,7 +413,6 @@ a.headernom{
     .imgt1{
         margin: 2rem 0.7rem 2rem auto;
         width:25%;
-        border-radius: 50%;
         border: 1px solid #000000;
     }
 }
