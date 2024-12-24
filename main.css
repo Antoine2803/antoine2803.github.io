@@ -396,6 +396,7 @@ a.headernom {
         margin: 2rem 2rem 2rem auto;
         width: 12%;
         border: 1px solid #000000;
+        border-radius: 1rem;
     }
 
     .imgt2 {
@@ -444,6 +445,7 @@ a.headernom {
         margin: 2rem 0.7rem 2rem auto;
         width: 25%;
         border: 1px solid #000000;
+        border-radius: 1rem;
     }
 
     .imgt2 {
@@ -560,6 +562,11 @@ a.headernom {
     text-align: center;
 }
 
+.artt3 {
+    text-align: left;
+    margin: 0rem 3rem 1rem 3rem;
+}
+
 .fieldsett1 {
     padding: 0;
     margin: 2rem 0;
@@ -659,6 +666,10 @@ label:hover {
     text-decoration: none;
     text-align: center;
     font-size: 0.8rem;
+}
+
+.centeredText {
+    text-align: center;
 }
 
 footer {
