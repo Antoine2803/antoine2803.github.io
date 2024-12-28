@@ -423,6 +423,32 @@ a.headernom {
         font-size: 0.9rem;
     }
 
+    /*          Images des cv           */
+    .englCV {
+        display: flex;
+        width: 50%;
+        margin-bottom: 3rem;
+        border-radius: 28px;
+        border: 1px solid var(--bleuf-ecrit);
+    }
+
+    .englCV.active {
+        display: none;
+    }
+
+    .frenchCV {
+        display: none;
+    }
+
+    .frenchCV.active {
+        display: flex;
+        margin-bottom: 3rem;
+        width: 50%;
+        border-radius: 28px;
+        border: 1px solid var(--bleuf-ecrit);
+    }
+
+
 }
 
 /* Telephone */
@@ -471,33 +497,35 @@ a.headernom {
         border-radius: 0.5rem;
         font-size: .9rem;
     }
+
+    /*          Images des cv           */
+    .englCV {
+        display: flex;
+        width: 90%;
+        margin-bottom: 3rem;
+        border-radius: 28px;
+        border: 1px solid var(--bleuf-ecrit);
+    }
+
+    .englCV.active {
+        display: none;
+    }
+
+    .frenchCV {
+        display: none;
+    }
+
+    .frenchCV.active {
+        display: flex;
+        margin-bottom: 3rem;
+        width: 90%;
+        border-radius: 28px;
+        border: 1px solid var(--bleuf-ecrit);
+    }
+
 }
 
 
-/*          Images des cv           */
-.englCV {
-    display: flex;
-    width: 80%;
-    margin-bottom: 3rem;
-    border-radius: 28px;
-    border: 1px solid var(--bleuf-ecrit);
-}
-
-.englCV.active {
-    display: none;
-}
-
-.frenchCV {
-    display: none;
-}
-
-.frenchCV.active {
-    display: flex;
-    margin-bottom: 3rem;
-    width: 80%;
-    border-radius: 28px;
-    border: 1px solid var(--bleuf-ecrit);
-}
 
 /*          bouttons dl         */
 .dleng {
