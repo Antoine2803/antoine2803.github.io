@@ -21,7 +21,7 @@ body {
 }
 
 /*      Mise en forme selon la taille de l'ecran      */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 930px) {
 
     header.wideNavBar {
         color: #fff;
@@ -79,7 +79,7 @@ body {
 }
 
 /*Changement d'affichage losrque l'écran devient trop petit pour la lageur de la barre de nav*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 930px) {
 
     header.wideNavBar {
         display: none;
