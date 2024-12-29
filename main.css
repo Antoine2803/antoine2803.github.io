@@ -412,17 +412,6 @@ a.headernom {
 
     }
 
-    .hyperlien {
-        text-decoration: none;
-        text-align: center;
-        color: #fff;
-        background-color: rgb(54, 54, 197);
-        padding: 0.1rem 0.3rem;
-        margin: 0.5rem 0rem;
-        border-radius: 0.5rem;
-        font-size: 0.9rem;
-    }
-
     /*          Images des cv           */
     .englCV {
         display: flex;
@@ -485,17 +474,6 @@ a.headernom {
         margin: 1rem 0rem 1rem;
         width: 95%;
 
-    }
-
-    .hyperlien {
-        text-decoration: none;
-        text-align: center;
-        color: #fff;
-        background-color: rgb(54, 54, 197);
-        padding: 0.1rem 0.3rem;
-        margin: 0.5rem 0rem;
-        border-radius: 0.5rem;
-        font-size: .9rem;
     }
 
     /*          Images des cv           */
@@ -706,6 +684,40 @@ label:hover {
     text-decoration: none;
     text-align: center;
     font-size: 0.8rem;
+}
+
+/* formatage des balises a */
+.hyperlien {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(54, 54, 197);
+    padding: 0.1rem 0.3rem;
+    margin: 0.5rem 0rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.hyperlienDOWN {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(192, 41, 14);
+    padding: 0.1rem 0.3rem;
+    margin: 0.5rem 0rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.hyperlien:hover {
+    text-decoration: none;
+    text-align: center;
+    color: var(--bg);
+    background-color: rgb(48, 48, 187);
+    padding: 0.1rem 0.3rem;
+    margin: 0.5rem 0rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .centeredText {
