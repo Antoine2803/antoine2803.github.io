@@ -608,12 +608,23 @@ a.headernom {
 /*          bouttons career dev         */
 .linke {
     border: none;
+    text-decoration: none;
     padding: 0.25rem 0.5rem 0.5rem;
     margin: 0rem 0.5rem;
     border-radius: 10000px;
     font-size: 1.5rem;
     color: #000000;
     background-color: white;
+}
+
+.linke:hover {
+    border: none;
+    padding: 0.25rem 0.5rem 0.5rem;
+    margin: 0rem 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(54, 54, 197);
+    border-radius: 10000px;
 }
 
 .frCV {
@@ -658,6 +669,7 @@ a.headernom {
 
 .fieldsett1 button:not(:disabled):hover {
     border: none;
+    cursor: pointer;
     padding: 0.25rem 0.5rem 0.5rem;
     margin: 0rem 0.5rem;
     font-size: 1.5rem;
