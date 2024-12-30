@@ -21,7 +21,7 @@ body {
 }
 
 /*      Mise en forme selon la taille de l'ecran      */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 930px) {
 
     header.wideNavBar {
         color: #fff;
@@ -79,7 +79,7 @@ body {
 }
 
 /*Changement d'affichage losrque l'écran devient trop petit pour la lageur de la barre de nav*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 930px) {
 
     header.wideNavBar {
         display: none;
@@ -412,16 +412,31 @@ a.headernom {
 
     }
 
-    .hyperlien {
-        text-decoration: none;
-        text-align: center;
-        color: #fff;
-        background-color: rgb(54, 54, 197);
-        padding: 0.1rem 0.3rem;
-        margin: 0.5rem 0rem;
-        border-radius: 0.5rem;
-        font-size: 0.9rem;
+    /*          Images des cv           */
+    .englCV {
+        display: flex;
+        width: 50%;
+        margin-bottom: 3rem;
+        border-radius: 28px;
+        border: 1px solid var(--bleuf-ecrit);
     }
+
+    .englCV.active {
+        display: none;
+    }
+
+    .frenchCV {
+        display: none;
+    }
+
+    .frenchCV.active {
+        display: flex;
+        margin-bottom: 3rem;
+        width: 50%;
+        border-radius: 28px;
+        border: 1px solid var(--bleuf-ecrit);
+    }
+
 
 }
 
@@ -461,43 +476,34 @@ a.headernom {
 
     }
 
-    .hyperlien {
-        text-decoration: none;
-        text-align: center;
-        color: #fff;
-        background-color: rgb(54, 54, 197);
-        padding: 0.1rem 0.3rem;
-        margin: 0.5rem 0rem;
-        border-radius: 0.5rem;
-        font-size: .9rem;
+    /*          Images des cv           */
+    .englCV {
+        display: flex;
+        width: 90%;
+        margin-bottom: 3rem;
+        border-radius: 28px;
+        border: 1px solid var(--bleuf-ecrit);
     }
+
+    .englCV.active {
+        display: none;
+    }
+
+    .frenchCV {
+        display: none;
+    }
+
+    .frenchCV.active {
+        display: flex;
+        margin-bottom: 3rem;
+        width: 90%;
+        border-radius: 28px;
+        border: 1px solid var(--bleuf-ecrit);
+    }
+
 }
 
 
-/*          Images des cv           */
-.englCV {
-    display: flex;
-    width: 80%;
-    margin-bottom: 3rem;
-    border-radius: 28px;
-    border: 1px solid var(--bleuf-ecrit);
-}
-
-.englCV.active {
-    display: none;
-}
-
-.frenchCV {
-    display: none;
-}
-
-.frenchCV.active {
-    display: flex;
-    margin-bottom: 3rem;
-    width: 80%;
-    border-radius: 28px;
-    border: 1px solid var(--bleuf-ecrit);
-}
 
 /*          bouttons dl         */
 .dleng {
@@ -580,12 +586,23 @@ a.headernom {
 /*          bouttons career dev         */
 .linke {
     border: none;
+    text-decoration: none;
     padding: 0.25rem 0.5rem 0.5rem;
     margin: 0rem 0.5rem;
     border-radius: 10000px;
     font-size: 1.5rem;
     color: #000000;
     background-color: white;
+}
+
+.linke:hover {
+    border: none;
+    padding: 0.25rem 0.5rem 0.5rem;
+    margin: 0rem 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(54, 54, 197);
+    border-radius: 10000px;
 }
 
 .frCV {
@@ -630,6 +647,7 @@ a.headernom {
 
 .fieldsett1 button:not(:disabled):hover {
     border: none;
+    cursor: pointer;
     padding: 0.25rem 0.5rem 0.5rem;
     margin: 0rem 0.5rem;
     font-size: 1.5rem;
@@ -666,6 +684,40 @@ label:hover {
     text-decoration: none;
     text-align: center;
     font-size: 0.8rem;
+}
+
+/* formatage des balises a */
+.hyperlien {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(54, 54, 197);
+    padding: 0.1rem 0.3rem;
+    margin: 0.5rem 0rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.hyperlienDOWN {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(192, 41, 14);
+    padding: 0.1rem 0.3rem;
+    margin: 0.5rem 0rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.hyperlien:hover {
+    text-decoration: none;
+    text-align: center;
+    color: var(--bg);
+    background-color: rgb(48, 48, 187);
+    padding: 0.1rem 0.3rem;
+    margin: 0.5rem 0rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .centeredText {
