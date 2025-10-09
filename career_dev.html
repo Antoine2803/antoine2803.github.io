@@ -16,9 +16,6 @@
                 <a href="index.html">
                     <li></li>Home
                 </a>
-                <a href="PPP.html">
-                    <li></li>PPP
-                </a>
                 <a href="eng_courses.html">
                     <li></li>Engineering<br> courses
                 </a>
@@ -45,7 +42,6 @@
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="PPP.html">PPP</a></li>
                 <li><a href="eng_courses.html">Engineering<br> course</a></li>
                 <li><a class="active" href="career_dev.html">Career<br> Development</a></li>
                 <li><a href="sports_and_others.html">Sport & other<br> activities</a></li>
@@ -78,18 +74,18 @@
     <div class="content">
         <div class="divt3">
             <fieldset class="fieldsett1">
-                <button class="enCV" disabled>English</button>
-                <button class="frCV">French</button>
+                <button class="frCV active" disabled>French</button>
+                <button class="enCV">English</button>
                 <a class="linke" href="https://www.linkedin.com/in/rey-antoine/">Linkedin</a>
 
 
             </fieldset>
+            <a class="dlfr active" href="assets/CV_fr.pdf" download="CV_fr.pdf"><img class="icondl"
+                    src="assets/DlIcon.webp">&nbsp;Download</a>
             <a class="dleng" href="assets/CV_en.pdf" download="CV_eng.pdf"><img class="icondl"
                     src="assets/DlIcon.webp">&nbsp;Download</a>
-            <a class="dlfr" href="assets/CV_fr.pdf" download="CV_fr.pdf"><img class="icondl"
-                    src="assets/DlIcon.webp">&nbsp;Download</a>
+            <img class="frenchCV active" src="assets/CV_fr.webp" alt="Mon CV">
             <img class="englCV" src="assets/CV_en.webp" alt="My CV">
-            <img class="frenchCV" src="assets/CV_fr.webp" alt="Mon CV">
         </div>
     </div>
 
@@ -101,10 +97,12 @@
         <div class="divt2">
             <h1 class="centeredText">Computer Engineering School ENSEEIHT - INP Toulouse</h1>
             <h2 class="artt1">2023 - 2026</h2>
-            <article class="artt1">
+            <article class="artt2">
                 Toulouse (France) <br>
-                I am in my second year as a student at ENSEEIHT engineering school in computer science. I'm currently
-                specializing in system and network architecture
+                I am in my third year as a student at ENSEEIHT engineering school in computer science. I'm currently
+                specializing in cybersecurity through the course
+                <a class="hyperlien" href="https://tls-sec.github.io/">TLS-SEC</a> and preparing a double diploma with
+                Paul Sabatier University
             </article>
         </div>
     </div>
@@ -133,9 +131,10 @@
     </div>
 
     <footer>
-        <p>&copy; 2023 - Antoine REY. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> - Antoine REY. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="main.js"></script>
+    <script src="career_dev.js"></script>
 </body>
 
 </html>
