@@ -463,32 +463,20 @@ a.headernom {
     }
 
     /*          Images des cv           */
-    .englCV {
-        display: flex;
-        width: 90%;
-        margin-bottom: 3rem;
-        border-radius: 28px;
-        border: 1px solid var(--bleuf-ecrit);
-    }
-
-    .englCV.active {
-        display: none;
-    }
-
-    .frenchCV {
-        display: none;
-    }
-
+    .englCV.active,
     .frenchCV.active {
         display: flex;
-        margin-bottom: 3rem;
         width: 90%;
+        margin-bottom: 3rem;
         border-radius: 28px;
         border: 1px solid var(--bleuf-ecrit);
     }
 
+    .englCV,
+    .frenchCVV {
+        display: none;
+    }
 }
-
 
 
 /*          bouttons dl         */
