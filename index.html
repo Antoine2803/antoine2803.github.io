@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="static/main.css">
     <title>Antoine REY | eportfolio</title>
 </head>
 
@@ -61,7 +61,7 @@
             <img class="imgt1" src="assets/main.webp" alt="portrait">
             <p class="at1">
                 French Computer Science<br> Student
-                <a class="hyperlien" href="https://tls-sec.github.io/" style="font-size: 1.5rem;">TLS-SEC 2026</a>
+                <a class="hyperlien" href="https://tls-sec.github.io/" style="font-size: 1.5rem;" target="_blank">TLS-SEC 2026</a>
 
             </p>
         </div>
@@ -69,12 +69,13 @@
             <div class="trace"></div>
             <h1 class="centeredText">About Me</h1>
             <article class="artt2">
-                Hello I'm Antoine REY. I'm 21 years old, and I'm currently studying at Toulouse INP - ENSEEIHT
+                Hello I'm Antoine REY. I'm <div style="all:unset" id="age"></div> years old, and
+                I'm currently studying at Toulouse INP - ENSEEIHT
                 in the Computer Science sector. I am passionate about computer science and want to work in cybersecurity
                 therefore I chose an to study in an engineering school. I'm currently in my third year of studies and I
-                am following the TLS-SEC training and preparing a double diploma with Paul Sabatier University.
+                am following the TLS-SEC training and preparing a double diploma with Paul Sabatier University (Master SSIR).
             </article>
-            <a class="linkBouton" href="https://www.enseeiht.fr/fr/index.html" style="margin-top: 0rem; width: 13rem;">
+            <a class="linkBouton" href="https://www.enseeiht.fr/fr/index.html" style="margin-top: 0rem; width: 13rem;" target="_blank">
                 ENSEEIHT website
             </a>
             <!-- <a class="divt2" href="https://www.enseeiht.fr/fr/index.html">
@@ -86,17 +87,28 @@
     <div class="content">
         <div class="divt2">
             <h1 class="centeredText">Contact me</h1>
-            <a class="linkBouton" href="mailto:fake@gmail.com"
-                onClick="this.href=this.href.replace('fake', 'antoine3178rey')"> E-mail</a>
-            <a class="linkBouton" href="https://www.linkedin.com/in/rey-antoine/">Linkedin</a>
-            <a class="linkBouton" href="https://github.com/Antoine2803">Github</a>
+            <a class="linkBouton" href="mailto:contact@arey.fr"> E-mail</a>
+            <a class="linkBouton" href="https://www.linkedin.com/in/rey-antoine/" target="_blank">Linkedin</a>
+            <a class="linkBouton" href="https://github.com/Antoine2803" target="_blank">Github</a>
         </div>
     </div>
 
     <footer>
         <p>&copy; <span id="year"></span> - Antoine REY. All rights reserved.</p>
     </footer>
-    <script src="main.js"></script>
+    <script src="static/main.js"></script>
+    <script>
+        const ageDiv = document.querySelector("#age");
+        console.log(ageDiv)
+        const ageDate = new Date("2003/10/28")
+        console.log(ageDate)
+        function _calculateAge(birthday) {
+            var ageDifMs = Date.now() - birthday.getTime();
+            var ageDate = new Date(ageDifMs);
+            return Math.abs(ageDate.getUTCFullYear() - 1970);
+        }
+        ageDiv.innerHTML = _calculateAge(ageDate)
+    </script>
 </body>
 
 </html>
